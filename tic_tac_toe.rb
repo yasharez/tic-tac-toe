@@ -1,6 +1,7 @@
 require_relative 'player'
+require_relative 'board'
 
-puts "Player 1 enter name:"
+puts 'Player 1 enter name:'
 player1_name = gets.chomp
 player1_symbol = ''
 loop do
@@ -19,3 +20,4 @@ player2_symbol = case player1_symbol
 player1 = Player.new(player1_name, player1_symbol)
 player2 = Player.new(player2_name, player2_symbol)
 
+board = Board.new
